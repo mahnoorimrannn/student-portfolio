@@ -1,0 +1,110 @@
+<!-- save as index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Khan | Student Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary:#2563EB;
+      --bg:rgb(6, 6, 93);
+      --text :white;
+      --radius:10px;
+      font-family: 'Inter', sans-serif;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); }
+    .container { max-width:1000px; margin:0 auto; padding:1.5rem; }
+    header { text-align:center; padding:2rem 1rem; }
+    header h1 { margin:0; font-size:2.5rem; }
+    header p { margin:6px 0; }
+    .btn { background: var(--primary); color:white; padding:0.6rem 1.2rem; border:none; border-radius:6px; cursor:pointer; text-decoration:none; display:inline-block; }
+    section { margin-top:2rem; }
+    .flex { display:flex; gap:1.2rem; flex-wrap:wrap; }
+    .card {
+      background:lightskyblue;
+      padding:1rem;
+      border-radius: var(--radius);
+      box-shadow:0 8px 25px rgba(0,0,0,0.07);
+      flex:1 1 280px;
+      position:relative;
+    }
+    .project-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:1rem; }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill { background:#2563EB; padding:6px 12px; border-radius:999px; font-size:0.9rem; }
+    .contact { display:flex; flex-direction:column; gap:8px; }
+    footer { text-align:center; margin:3rem 0 1rem; font-size:0.8rem; background-color: #2563EB; }
+    @media (max-width:800px){
+      header h1 { font-size:2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ali Khan</h1>
+      <p>Computer Science Student @ FAST</p>
+      <p>“I build clean and responsive websites.”</p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </header>
+
+    <section id="about">
+      <div class="card">
+        <h2>About Me</h2>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
+          <img src="https://i.pravatar.cc/120" alt="avatar" style="border-radius:50%; width:120px; height:120px; object-fit:cover;">
+          <p>I’m Ali Khan, a Computer Science student at FAST University. I specialize in front-end web development and enjoy creating simple, user-friendly designs. Currently, I’m learning JavaScript and working on multiple demo projects to sharpen my skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>Bliss Skincare Clone</h3>
+          <p>An e-commerce demo website inspired by Bliss. Features product sections, responsive design, and shopping cart mockup.</p>
+          <a class="btn" href="#">View Demo</a>
+        </div>
+        <div class="card">
+          <h3>Travel Agency Website</h3>
+          <p>Landing page for a travel agency showcasing tour packages, contact form, and clean UI design.</p>
+          <a class="btn" href="#">View Demo</a>
+        </div>
+        <div class="card">
+          <h3>Event Planning Platform</h3>
+          <p>Multi-page demo site inspired by PartySlate. Highlights services, image galleries, and booking section.</p>
+          <a class="btn" href="#">View Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript (learning)</span>
+        <span class="skill">Git</span>
+        <span class="skill">Figma</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:alikhan.fast@example.com">alikhan.fast@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/alikhan" target="_blank">linkedin.com/in/alikhan</a></p>
+        <p>GitHub: <a href="https://github.com/alikhan-dev" target="_blank">github.com/alikhan-dev</a></p>
+        <p>I’m open to freelance projects, collaborations, and internships. Reach out anytime!</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Ali Khan Portfolio. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
